@@ -42,6 +42,34 @@ const cap = (colour: string, hex: string, image: string): Product => ({
   inStock: true,
 });
 
+const wristband = (
+  colour: string,
+  hex: string,
+  images: string[],
+  description: string,
+  isPopular = false
+): Product => ({
+  id: `wristband-${colour.toLowerCase().replace(/\s+/g, '-')}`,
+  slug: `${colour.toLowerCase().replace(/\s+/g, '-')}-wristband`,
+  name: `${colour} Wristband`,
+  category: 'Wristbands',
+  price: 100,
+  images,
+  sizes: ['One size'],
+  colors: [{ name: colour, hex, imageIndex: 0 }],
+  description,
+  details: [
+    'Durable silicone band',
+    'Black UNDIGNIFIED & Worship Night print',
+    'Waterproof & comfortable stretch fit',
+    'One size fits most',
+  ],
+  tags: ['Wristband', 'Silicone', colour, 'Accessories'],
+  isNew: true,
+  isPopular,
+  inStock: true,
+});
+
 export const PRODUCTS: Product[] = [
   {
     id: 'hoodie-brown',
@@ -116,6 +144,27 @@ export const PRODUCTS: Product[] = [
   tee('Maroon', '#7A1F3A', IMAGES.teeMaroon),
   cap('Black', '#1B1A19', IMAGES.capBlack),
   cap('White', '#F4F4F2', IMAGES.capWhite),
+  wristband(
+    'Mint Green',
+    '#44CD8A',
+    [IMAGES.wristbandMintGreen, IMAGES.wristbandMintGreenDetail],
+    'Mint green silicone wristband styled with the bold UNDIGNIFIED branding and Worship Night lettering.',
+    true
+  ),
+  wristband(
+    'Lilac',
+    '#C2A3DF',
+    [IMAGES.wristbandArmSeveral, IMAGES.wristbandLilac, IMAGES.wristbandLilacDetail],
+    'Lilac purple silicone wristband featuring the UNDIGNIFIED wordmark accented with star details on one side and Worship Night on the other.',
+    true
+  ),
+  wristband(
+    'Sky Blue',
+    '#2CA8EA',
+    [IMAGES.wristbandSkyBlue, IMAGES.wristbandSkyBlueDetail, IMAGES.wristbandDuo],
+    'Sky blue silicone wristband printed with the UNDIGNIFIED wordmark on one face and Worship Night on the reverse. Soft, durable, and comfortable for everyday wear.',
+    true
+  ),
   {
     id: 'jute-bag-a4',
     slug: 'jute-bag-a4',

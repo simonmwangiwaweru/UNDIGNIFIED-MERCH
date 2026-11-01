@@ -4,7 +4,8 @@ export type ProductCategory =
   | 'Polo Shirts'
   | 'T-Shirts'
   | 'Caps'
-  | 'Bags';
+  | 'Bags'
+  | 'Wristbands';
 
 export interface ProductColor {
   name: string;

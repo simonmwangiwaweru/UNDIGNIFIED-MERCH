@@ -10,7 +10,7 @@ import { formatPrice } from '../lib/format';
 
 type SortKey = 'newest' | 'price-asc' | 'price-desc';
 
-const CATEGORIES: ProductCategory[] = ['Hoodies', 'Sweatshirts', 'Polo Shirts', 'T-Shirts', 'Caps', 'Bags'];
+const CATEGORIES: ProductCategory[] = ['Hoodies', 'Sweatshirts', 'Polo Shirts', 'T-Shirts', 'Caps', 'Wristbands', 'Bags'];
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: 'newest', label: 'Newest first' },
@@ -76,7 +76,7 @@ export const Collections: React.FC = () => {
         description="Every piece raises funds for Worship Night 2026. Pick a category to browse."
       />
 
-      <div className="mb-16 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="mb-16 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
         {categories.map((cat) => {
           const selected = activeCategory === cat.name;
           return (

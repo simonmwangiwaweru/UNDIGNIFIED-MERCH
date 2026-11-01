@@ -16,6 +16,14 @@ import sweatshirtBlack from '../assets/images/products/sweatshirt-black.jpg';
 import capBlack from '../assets/images/products/cap-black.jpg';
 import capWhite from '../assets/images/products/cap-white.jpg';
 import toteOrange from '../assets/images/look-tote-orange.jpeg';
+import wristbandSkyBlue from '../assets/images/products/wristband-sky-blue.jpg';
+import wristbandSkyBlueDetail from '../assets/images/products/wristband-sky-blue-detail.jpg';
+import wristbandLilac from '../assets/images/products/wristband-lilac.jpg';
+import wristbandLilacDetail from '../assets/images/products/wristband-lilac-detail.jpg';
+import wristbandMintGreen from '../assets/images/products/wristband-mint-green.jpg';
+import wristbandMintGreenDetail from '../assets/images/products/wristband-mint-green-detail.jpg';
+import wristbandDuo from '../assets/images/products/wristband-duo.jpg';
+import wristbandArmSeveral from '../assets/images/products/wristband-arm-several.jpg';
 
 export const IMAGES = {
   /** Trio photoshoot, used in the "Wear the message" band. */
@@ -37,6 +45,14 @@ export const IMAGES = {
   sweatshirtBlack,
   capBlack,
   capWhite,
+  wristbandSkyBlue,
+  wristbandSkyBlueDetail,
+  wristbandLilac,
+  wristbandLilacDetail,
+  wristbandMintGreen,
+  wristbandMintGreenDetail,
+  wristbandDuo,
+  wristbandArmSeveral,
   /** Official Worship Night 2026 event poster. */
   poster,
   /** Muted loop for the hero (portrait, 720×1280) and its still frame. */

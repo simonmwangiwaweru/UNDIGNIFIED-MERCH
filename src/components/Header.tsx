@@ -13,6 +13,7 @@ const NAV_CATEGORIES: { label: string; category: ProductCategory }[] = [
   { label: 'Polo shirts', category: 'Polo Shirts' },
   { label: 'T-shirts', category: 'T-Shirts' },
   { label: 'Caps', category: 'Caps' },
+  { label: 'Wristbands', category: 'Wristbands' },
   { label: 'Jute bags', category: 'Bags' },
 ];
 
